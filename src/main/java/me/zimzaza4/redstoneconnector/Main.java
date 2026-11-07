@@ -1,6 +1,5 @@
 package me.zimzaza4.redstoneconnector;
 
-import com.sun.tools.javac.util.Names;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import me.zimzaza4.redstoneconnector.remote.RemoteController;
 import me.zimzaza4.redstoneconnector.remote.RemoteExecuteBlock;

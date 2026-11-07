@@ -1,0 +1,6 @@
+version: 1
+upstream:
+  owner: zimzaza4
+  repo: RedstoneConnector
+  branch: master
+  version_strategy: none

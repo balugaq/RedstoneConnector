@@ -1,0 +1,21 @@
+# Gradle Version Catalog
+# 依赖集中管理：build.gradle.kts 里用 `libs.xxx` 引用。
+# alias 一律 kebab-case，Kotlin DSL 访问时自动转驼峰（如 `paper-api` → `libs.paper.api`）。
+
+[versions]
+# Core
+# 原 Maven 依赖：spigot-api 1.17.1-R0.1-SNAPSHOT（spigot repo）→ 升级为 paper-api 1.20.1（2026-11-07 主人决定）
+paper-api = "1.20.1-R0.1-SNAPSHOT"
+# 原 Maven 依赖：b39097e015（JitPack 远端 404，仅本地缓存可解析）→ 升级为 2025.1（2026-11-07 主人决定）
+slimefun4 = "2025.1"
+
+# Plugins
+shadow = "9.6.1"
+
+[libraries]
+# Core
+paper-api = { module = "io.papermc.paper:paper-api", version.ref = "paper-api" }
+slimefun4 = { module = "com.github.SlimefunGuguProject:Slimefun4", version.ref = "slimefun4" }
+
+[plugins]
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
